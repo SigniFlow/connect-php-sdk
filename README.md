@@ -31,7 +31,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
     }
   ],
   "require": {
-    "signiflow/connect-php-sdk": "*@dev"
+    "signiflow/connect-php-sdk": ">=1.2*"
   }
 }
 ```
