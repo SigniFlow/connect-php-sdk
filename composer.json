@@ -1,5 +1,5 @@
 {
-    "name": "SigniFlow/connect-php-sdk",
+    "name": "signiflow/connect-php-sdk",
     "version": "1.20210712.0",
     "description": "## SigniFlow API used to automate esignature workflow creation and management.",
     "keywords": [
