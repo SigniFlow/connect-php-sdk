@@ -36,8 +36,10 @@ $apiInstance = new SigniFlowConnect\Api\ViewersApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json''); // string
-$get_doc_link_request = json_decode('{"DocIDField":"string","EmailField":"email@domain.com","ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\GetDocLinkRequest | ##### Get Document Link Request Model
+$content_type = json_decode(''application/json')'; // string
+
+$get_doc_link_request = json_decode('{"DocIDField":"string","EmailField":"email@domain.com","ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocLinkRequest | ##### Get Document Link Request Model
+
 
 try {
     $result = $apiInstance->postGetDocLink($content_type, $get_doc_link_request);
@@ -99,8 +101,10 @@ $apiInstance = new SigniFlowConnect\Api\ViewersApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json''); // string
-$get_document_prepper_link_request = json_decode('{"DocIDField":"string","EmailSettingField":0,"ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\GetDocumentPrepperLinkRequest | ##### Get Document Prepper Link Request Model
+$content_type = json_decode(''application/json')'; // string
+
+$get_document_prepper_link_request = json_decode('{"DocIDField":"string","EmailSettingField":0,"ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocumentPrepperLinkRequest | ##### Get Document Prepper Link Request Model
+
 
 try {
     $result = $apiInstance->postGetDocumentPrepperLink($content_type, $get_document_prepper_link_request);

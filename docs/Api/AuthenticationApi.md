@@ -38,8 +38,10 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json''); // string
-$login_request = json_decode('{"UserNameField":"email@domain.com","PasswordField":"P@ssword"}'); // \SigniFlowConnect\Model\LoginRequest | ##### Login Request Model
+$content_type = json_decode(''application/json')'; // string
+
+$login_request = json_decode('{"UserNameField":"email@domain.com","PasswordField":"P@ssword"})'; // \SigniFlowConnect\Model\LoginRequest | ##### Login Request Model
+
 
 try {
     $result = $apiInstance->login($content_type, $login_request);
@@ -101,8 +103,10 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json''); // string
-$logout_request = json_decode('{"TokenField":"aaa111"}'); // \SigniFlowConnect\Model\LogoutRequest | ##### Logout Request Model
+$content_type = json_decode(''application/json')'; // string
+
+$logout_request = json_decode('{"TokenField":"aaa111"})'; // \SigniFlowConnect\Model\LogoutRequest | ##### Logout Request Model
+
 
 try {
     $result = $apiInstance->postLogout($content_type, $logout_request);
@@ -164,8 +168,10 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json''); // string
-$token_extend_request = json_decode('{"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"TokenValidityField":0}'); // \SigniFlowConnect\Model\TokenExtendRequest | ##### Token Extend Request Model
+$content_type = json_decode(''application/json')'; // string
+
+$token_extend_request = json_decode('{"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"TokenValidityField":0})'; // \SigniFlowConnect\Model\TokenExtendRequest | ##### Token Extend Request Model
+
 
 try {
     $result = $apiInstance->postTokenExtend($content_type, $token_extend_request);
@@ -227,8 +233,10 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json''); // string
-$token_validate_request = json_decode('{"0":"string"}'); // \SigniFlowConnect\Model\TokenValidateRequest | ##### Token Validate Request Model
+$content_type = json_decode(''application/json')'; // string
+
+$token_validate_request = json_decode('{"0":"string"})'; // \SigniFlowConnect\Model\TokenValidateRequest | ##### Token Validate Request Model
+
 
 try {
     $result = $apiInstance->postTokenValidate($content_type, $token_validate_request);
