@@ -1,8 +1,8 @@
 ![SigniFlow Logo]
 ---
 
-[![Build status](https://ci.appveyor.com/api/projects/status/7pwdgm3vwl1pd04f?svg=true)](https://ci.appveyor.com/project/SigniFlow/connect-csharp-sdk)
-[![PHP version](https://badge.fury.io/ph/square%2Fsquare.svg)](https://badge.fury.io/ph/square%2Fsquare)
+[![PHP Composer](https://github.com/SigniFlow/connect-php-sdk/actions/workflows/php.yml/badge.svg?branch=master)](https://github.com/SigniFlow/connect-php-sdk/actions/workflows/php.yml)
+[![PHP version](https://badge.fury.io/ph/signiflow%2Fconnect-php-sdk.svg)](https://badge.fury.io/ph/signiflow%2Fconnect-php-sdk)
 [![Apache-2 license](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # OpenAPIClient-php - the PHP library for the SigniFlow OpenAPI Spec v1
