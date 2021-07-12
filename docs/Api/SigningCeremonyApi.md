@@ -26,13 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\SigningCeremonyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$multiple_signers_signing_ceremony_request = {"DocField":"string","DocNameField":"string","LoginPasswordField":"12345","LoginUserNameField":"John@gmail.com","SignerListField":[{"SignatureHField":0,"SignatureImageField":"string","SignatureImageIncludeBorderField":true,"SignatureImageIncludeReasonField":true,"SignatureImageIncludeSignedByField":true,"SignatureImageIncludeSignedDateField":true,"SignatureImageTypeField":0,"SignaturePageField":0,"SignatureWField":0,"SignatureXField":0,"SignatureYField":0,"SignerEmailField":"string","SignerFullNameField":"string","SignerIndentificationNumberField":"string","SignerLocationField":"string","SignerMobileNumberField":"string","SignerReasonField":"string","SignerTrustOriginField":"string","SignerTrustReferenceField":"string"}]}; // \SigniFlowConnect\Model\MultipleSignersSigningCeremonyRequest | ##### Multiple Signers Signing Ceremony Request Model
+$content_type = json_decode(''application/json''); // string
+$multiple_signers_signing_ceremony_request = json_decode('{"DocField":"string","DocNameField":"string","LoginPasswordField":"12345","LoginUserNameField":"John@gmail.com","SignerListField":[{"SignatureHField":0,"SignatureImageField":"string","SignatureImageIncludeBorderField":true,"SignatureImageIncludeReasonField":true,"SignatureImageIncludeSignedByField":true,"SignatureImageIncludeSignedDateField":true,"SignatureImageTypeField":0,"SignaturePageField":0,"SignatureWField":0,"SignatureXField":0,"SignatureYField":0,"SignerEmailField":"string","SignerFullNameField":"string","SignerIndentificationNumberField":"string","SignerLocationField":"string","SignerMobileNumberField":"string","SignerReasonField":"string","SignerTrustOriginField":"string","SignerTrustReferenceField":"string"}]}'); // \SigniFlowConnect\Model\MultipleSignersSigningCeremonyRequest | ##### Multiple Signers Signing Ceremony Request Model
 
 try {
     $result = $apiInstance->postMultipleSignersSigningCeremony($content_type, $multiple_signers_signing_ceremony_request);
@@ -84,13 +89,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\SigningCeremonyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$signing_ceremony_v2_request = {"CheckboxFieldsListField":[{"CheckboxHField":0,"CheckboxPageField":0,"CheckboxWField":0,"CheckboxXField":0,"CheckboxYField":0,"IsCheckedField":true}],"DocField":"string","DocNameField":"string","InitialFieldsListField":[{"InitialHField":0,"InitialImageField":"string","InitialImageTypeField":0,"InitialPageField":0,"InitialWField":0,"InitialXField":0,"InitialYField":0}],"LoginPasswordField":"string","LoginUserNameField":"string","SignatureHField":0,"SignatureImageField":"string","SignatureImageIncludeBorderField":true,"SignatureImageIncludeReasonField":true,"SignatureImageIncludeSignedByField":true,"SignatureImageIncludeSignedDateField":true,"SignatureImageTypeField":0,"SignaturePageField":0,"SignatureWField":0,"SignatureXField":0,"SignatureYField":0,"SignerEmailField":"string","SignerFullNameField":"string","SignerIdentificationNumberField":"string","SignerLocationField":"string","SignerMobileNumberField":"string","SignerReasonField":"string","SignerTrustOriginField":"string","SignerTrustReferenceField":"string","TextFieldsListField":[{"TextFieldHField":0,"TextFieldPageField":0,"TextFieldValueField":"string","TextFieldWField":0,"TextFieldXField":0,"TextFieldYField":0}]}; // \SigniFlowConnect\Model\SigningCeremonyV2Request | ##### Signing Ceremony V2 Request Model
+$content_type = json_decode(''application/json''); // string
+$signing_ceremony_v2_request = json_decode('{"CheckboxFieldsListField":[{"CheckboxHField":0,"CheckboxPageField":0,"CheckboxWField":0,"CheckboxXField":0,"CheckboxYField":0,"IsCheckedField":true}],"DocField":"string","DocNameField":"string","InitialFieldsListField":[{"InitialHField":0,"InitialImageField":"string","InitialImageTypeField":0,"InitialPageField":0,"InitialWField":0,"InitialXField":0,"InitialYField":0}],"LoginPasswordField":"string","LoginUserNameField":"string","SignatureHField":0,"SignatureImageField":"string","SignatureImageIncludeBorderField":true,"SignatureImageIncludeReasonField":true,"SignatureImageIncludeSignedByField":true,"SignatureImageIncludeSignedDateField":true,"SignatureImageTypeField":0,"SignaturePageField":0,"SignatureWField":0,"SignatureXField":0,"SignatureYField":0,"SignerEmailField":"string","SignerFullNameField":"string","SignerIdentificationNumberField":"string","SignerLocationField":"string","SignerMobileNumberField":"string","SignerReasonField":"string","SignerTrustOriginField":"string","SignerTrustReferenceField":"string","TextFieldsListField":[{"TextFieldHField":0,"TextFieldPageField":0,"TextFieldValueField":"string","TextFieldWField":0,"TextFieldXField":0,"TextFieldYField":0}]}'); // \SigniFlowConnect\Model\SigningCeremonyV2Request | ##### Signing Ceremony V2 Request Model
 
 try {
     $result = $apiInstance->postSigningCeremonyV2($content_type, $signing_ceremony_v2_request);

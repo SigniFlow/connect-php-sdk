@@ -26,13 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\ViewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$get_doc_link_request = {"DocIDField":"string","EmailField":"email@domain.com","ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\GetDocLinkRequest | ##### Get Document Link Request Model
+$content_type = json_decode(''application/json''); // string
+$get_doc_link_request = json_decode('{"DocIDField":"string","EmailField":"email@domain.com","ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\GetDocLinkRequest | ##### Get Document Link Request Model
 
 try {
     $result = $apiInstance->postGetDocLink($content_type, $get_doc_link_request);
@@ -84,13 +89,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\ViewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$get_document_prepper_link_request = {"DocIDField":"string","EmailSettingField":0,"ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\GetDocumentPrepperLinkRequest | ##### Get Document Prepper Link Request Model
+$content_type = json_decode(''application/json''); // string
+$get_document_prepper_link_request = json_decode('{"DocIDField":"string","EmailSettingField":0,"ReturnURLField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\GetDocumentPrepperLinkRequest | ##### Get Document Prepper Link Request Model
 
 try {
     $result = $apiInstance->postGetDocumentPrepperLink($content_type, $get_document_prepper_link_request);

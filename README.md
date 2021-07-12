@@ -58,13 +58,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\AuditsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$get_audit_document_request = {"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\GetAuditDocumentRequest | ##### Get Audit Document Request Model
+$content_type = json_decode(''application/json')'; // string
+$get_audit_document_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetAuditDocumentRequest | ##### Get Audit Document Request Model
 
 try {
     $result = $apiInstance->postGetAuditDocument($content_type, $get_audit_document_request);

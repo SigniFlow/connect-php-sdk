@@ -37,13 +37,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$create_workflow_request = {"AdditionalDataField":"\"\"","AutoExpireField":0,"AutoRemindField":0,"DocField":"String content","DocNameField":"String content","DueDateField":"2019-08-24T14:15:22Z","ExtensionField":0,"MessageField":"String content","PriorityField":0,"SLAField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\CreateWorkflowRequest | ##### Create Workflow Request Model
+$content_type = json_decode(''application/json''); // string
+$create_workflow_request = json_decode('{"AdditionalDataField":"\"\"","AutoExpireField":0,"AutoRemindField":0,"DocField":"String content","DocNameField":"String content","DueDateField":"2019-08-24T14:15:22Z","ExtensionField":0,"MessageField":"String content","PriorityField":0,"SLAField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\CreateWorkflowRequest | ##### Create Workflow Request Model
 
 try {
     $result = $apiInstance->createWorkflow($content_type, $create_workflow_request);
@@ -95,13 +100,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$get_document_request = {"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\GetDocumentRequest | ##### Get Document Request Model
+$content_type = json_decode(''application/json''); // string
+$get_document_request = json_decode('{"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\GetDocumentRequest | ##### Get Document Request Model
 
 try {
     $result = $apiInstance->getDocument($content_type, $get_document_request);
@@ -153,13 +163,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$add_workflow_step_v2_request = {"ActionField":0,"CellField":"string","DocIDField":"2147483647","EmailField":"email@domain.com","FirstNameField":"John","LanguageCodeField":"ENG","LastNameField":"Smith","ProxyAllowedField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\AddWorkflowStepV2Request | ##### Add A Workflow Step Request Model
+$content_type = json_decode(''application/json''); // string
+$add_workflow_step_v2_request = json_decode('{"ActionField":0,"CellField":"string","DocIDField":"2147483647","EmailField":"email@domain.com","FirstNameField":"John","LanguageCodeField":"ENG","LastNameField":"Smith","ProxyAllowedField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\AddWorkflowStepV2Request | ##### Add A Workflow Step Request Model
 
 try {
     $result = $apiInstance->postAddWorkflowStep($content_type, $add_workflow_step_v2_request);
@@ -211,13 +226,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$cancel_flow_request = {"DocIDField":"2147483647","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\CancelFlowRequest | ##### Cancel Flow Request Model
+$content_type = json_decode(''application/json''); // string
+$cancel_flow_request = json_decode('{"DocIDField":"2147483647","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\CancelFlowRequest | ##### Cancel Flow Request Model
 
 try {
     $result = $apiInstance->postCancelFlow($content_type, $cancel_flow_request);
@@ -269,13 +289,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$delete_doc_request = {"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\DeleteDocRequest | ##### Delete Document Request Model
+$content_type = json_decode(''application/json''); // string
+$delete_doc_request = json_decode('{"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\DeleteDocRequest | ##### Delete Document Request Model
 
 try {
     $result = $apiInstance->postDeleteDoc($content_type, $delete_doc_request);
@@ -327,13 +352,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$doc_prepper_add_fields_flow_id_request = {"DocFieldTypeField":0,"DocIDField":12344,"FlowIDField":11111,"HeightField":"25","WidthField":"20","IsInvisibleField":true,"LinkToField":"string","PageNumberField":2,"NameField":"string","UserEmailField":"email@domain.com","XCoordinateField":"50","YCoordinateField":"150","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\DocPrepperAddFieldsFlowIDRequest | ##### Document Prepper Add Fields Request Model
+$content_type = json_decode(''application/json''); // string
+$doc_prepper_add_fields_flow_id_request = json_decode('{"DocFieldTypeField":0,"DocIDField":12344,"FlowIDField":11111,"HeightField":"25","WidthField":"20","IsInvisibleField":true,"LinkToField":"string","PageNumberField":2,"NameField":"string","UserEmailField":"email@domain.com","XCoordinateField":"50","YCoordinateField":"150","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\DocPrepperAddFieldsFlowIDRequest | ##### Document Prepper Add Fields Request Model
 
 try {
     $result = $apiInstance->postDocPrepperAddField($content_type, $doc_prepper_add_fields_flow_id_request);
@@ -385,13 +415,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$doc_prepper_add_advanced_fields_request = {"FieldInfoListField":[{"AdvancedFieldTypeField":0,"DocIDField":2147483647,"FieldOptionsListField":[{"LinkedValueField":"string","MaxField":5,"MinField":2,"ValueField":"string"}],"FlowIDField":11111,"FontFamilyField":"Arial","FontSizeField":12,"HeightField":"30","WidthField":"15","LinkToField":"string","NameField":"Text Field","PageNumberField":2,"SearchableField":true,"UserEmailField":"John@domain.com","ValueField":"string","XCoordinateField":"60","YCoordinateField":"120"}],"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\DocPrepperAddAdvancedFieldsRequest | ##### Document Prepper Add Advanced Fields Request Model
+$content_type = json_decode(''application/json''); // string
+$doc_prepper_add_advanced_fields_request = json_decode('{"FieldInfoListField":[{"AdvancedFieldTypeField":0,"DocIDField":2147483647,"FieldOptionsListField":[{"LinkedValueField":"string","MaxField":5,"MinField":2,"ValueField":"string"}],"FlowIDField":11111,"FontFamilyField":"Arial","FontSizeField":12,"HeightField":"30","WidthField":"15","LinkToField":"string","NameField":"Text Field","PageNumberField":2,"SearchableField":true,"UserEmailField":"John@domain.com","ValueField":"string","XCoordinateField":"60","YCoordinateField":"120"}],"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\DocPrepperAddAdvancedFieldsRequest | ##### Document Prepper Add Advanced Fields Request Model
 
 try {
     $result = $apiInstance->postDocPrepperAdvancedFields($content_type, $doc_prepper_add_advanced_fields_request);
@@ -443,13 +478,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$full_workflow_request = {"AdditionalDataField":"string","AutoRemindField":0,"CustomMessageField":"A message with things.","DocField":"string","DocNameField":"Document 1","DueDateField":"02/02/2021","ExtensionField":0,"FlattenDocumentField":true,"KeepContentSecurityField":true,"KeepCustomPropertiesField":true,"KeepXMPMetadataField":true,"PortfolioInformationField":{"CreatePortfolioField":true,"LinkToPortfolioField":true,"PortfolioIDField":11112,"PortfolioNameField":"Portfolio 1"},"PriorityField":0,"SLAField":0,"SendFirstEmailField":true,"SendWorkflowEmailsField":true,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"WorkflowUsersListField":[{"ActionField":0,"AllowProxyField":0,"AutoSignField":true,"EmailAddressField":"email@domain.com","GroupStepField":{"GroupMembersField":[{"LanguageCodeField":"string","UserEmailField":"string","UserFullNameField":"string","UserMobileNumberField":"string"}],"GroupNameField":"Managers","RequiredNumberOfSignaturesField":3},"LanguageCodeField":"ENG","LatitudeField":"string","LongitudeField":"string","MobileNumberField":"078 222 2222","PreloadedFaceToFaceSignersField":[{}],"SignReasonField":"Because yes","SignerPasswordField":"P@ssw0rd","UserFirstNameField":"John","UserFullNameField":"John Smith","UserLastNameField":"Smith","WorkflowUserFieldsField":[{"FieldTypeField":7,"FontFamilyField":"Arial","FontSizeField":15,"GroupUserNumberField":5,"HeightField":"15","IsInvisibleField":true,"PageNumberField":2,"TagNameField":"string","ValueField":"string","WidthField":"25","XCoordinateField":"60","XOffsetField":15,"YCoordinateField":"150","YOffsetField":20}]}]}; // \SigniFlowConnect\Model\FullWorkflowRequest | ##### FullWorkflow Request Model
+$content_type = json_decode(''application/json''); // string
+$full_workflow_request = json_decode('{"AdditionalDataField":"string","AutoRemindField":0,"CustomMessageField":"A message with things.","DocField":"string","DocNameField":"Document 1","DueDateField":"02/02/2021","ExtensionField":0,"FlattenDocumentField":true,"KeepContentSecurityField":true,"KeepCustomPropertiesField":true,"KeepXMPMetadataField":true,"PortfolioInformationField":{"CreatePortfolioField":true,"LinkToPortfolioField":true,"PortfolioIDField":11112,"PortfolioNameField":"Portfolio 1"},"PriorityField":0,"SLAField":0,"SendFirstEmailField":true,"SendWorkflowEmailsField":true,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"WorkflowUsersListField":[{"ActionField":0,"AllowProxyField":0,"AutoSignField":true,"EmailAddressField":"email@domain.com","GroupStepField":{"GroupMembersField":[{"LanguageCodeField":"string","UserEmailField":"string","UserFullNameField":"string","UserMobileNumberField":"string"}],"GroupNameField":"Managers","RequiredNumberOfSignaturesField":3},"LanguageCodeField":"ENG","LatitudeField":"string","LongitudeField":"string","MobileNumberField":"078 222 2222","PreloadedFaceToFaceSignersField":[{}],"SignReasonField":"Because yes","SignerPasswordField":"P@ssw0rd","UserFirstNameField":"John","UserFullNameField":"John Smith","UserLastNameField":"Smith","WorkflowUserFieldsField":[{"FieldTypeField":7,"FontFamilyField":"Arial","FontSizeField":15,"GroupUserNumberField":5,"HeightField":"15","IsInvisibleField":true,"PageNumberField":2,"TagNameField":"string","ValueField":"string","WidthField":"25","XCoordinateField":"60","XOffsetField":15,"YCoordinateField":"150","YOffsetField":20}]}]}'); // \SigniFlowConnect\Model\FullWorkflowRequest | ##### FullWorkflow Request Model
 
 try {
     $result = $apiInstance->postFullWorkflow($content_type, $full_workflow_request);
@@ -501,13 +541,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$get_doc_status_request = {"DocIDField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\GetDocStatusRequest | ##### Get Document Status Request Model
+$content_type = json_decode(''application/json''); // string
+$get_doc_status_request = json_decode('{"DocIDField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\GetDocStatusRequest | ##### Get Document Status Request Model
 
 try {
     $result = $apiInstance->postGetDocStatus($content_type, $get_doc_status_request);
@@ -559,13 +604,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$initiate_flow_request = {"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\InitiateFlowRequest | ##### Initiate Flow Request Model
+$content_type = json_decode(''application/json''); // string
+$initiate_flow_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\InitiateFlowRequest | ##### Initiate Flow Request Model
 
 try {
     $result = $apiInstance->postInitiateFlow($content_type, $initiate_flow_request);
@@ -617,13 +667,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$initiate_flow_no_email_request = {"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\InitiateFlowNoEmailRequest | ##### Initiate Flow No Email Request Model
+$content_type = json_decode(''application/json''); // string
+$initiate_flow_no_email_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\InitiateFlowNoEmailRequest | ##### Initiate Flow No Email Request Model
 
 try {
     $result = $apiInstance->postInitiateFlowNoEmail($content_type, $initiate_flow_no_email_request);
@@ -675,13 +730,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$initiate_flow_no_initial_email_request = {"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\InitiateFlowNoInitialEmailRequest | ##### Initiate Flow No Initial Email Request Model
+$content_type = json_decode(''application/json''); // string
+$initiate_flow_no_initial_email_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\InitiateFlowNoInitialEmailRequest | ##### Initiate Flow No Initial Email Request Model
 
 try {
     $result = $apiInstance->postInitiateFlowNoInitialEmail($content_type, $initiate_flow_no_initial_email_request);
@@ -733,13 +793,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$workflow_sign_request = {"DocIDField":"string","LatitudeField":"string","LoginPasswordField":"pa$$word","LoginUserNameField":"email@domain.com","LongitudeField":"string","SignReasonField":"string","TimeZoneOffsetField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\WorkflowSignRequest | ##### Workflow Sign Request Model
+$content_type = json_decode(''application/json''); // string
+$workflow_sign_request = json_decode('{"DocIDField":"string","LatitudeField":"string","LoginPasswordField":"pa$$word","LoginUserNameField":"email@domain.com","LongitudeField":"string","SignReasonField":"string","TimeZoneOffsetField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\WorkflowSignRequest | ##### Workflow Sign Request Model
 
 try {
     $result = $apiInstance->postWorkflowSign($content_type, $workflow_sign_request);

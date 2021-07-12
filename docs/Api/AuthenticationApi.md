@@ -28,13 +28,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$login_request = {"UserNameField":"email@domain.com","PasswordField":"P@ssword"}; // \SigniFlowConnect\Model\LoginRequest | ##### Login Request Model
+$content_type = json_decode(''application/json''); // string
+$login_request = json_decode('{"UserNameField":"email@domain.com","PasswordField":"P@ssword"}'); // \SigniFlowConnect\Model\LoginRequest | ##### Login Request Model
 
 try {
     $result = $apiInstance->login($content_type, $login_request);
@@ -86,13 +91,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$logout_request = {"TokenField":"aaa111"}; // \SigniFlowConnect\Model\LogoutRequest | ##### Logout Request Model
+$content_type = json_decode(''application/json''); // string
+$logout_request = json_decode('{"TokenField":"aaa111"}'); // \SigniFlowConnect\Model\LogoutRequest | ##### Logout Request Model
 
 try {
     $result = $apiInstance->postLogout($content_type, $logout_request);
@@ -144,13 +154,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$token_extend_request = {"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"TokenValidityField":0}; // \SigniFlowConnect\Model\TokenExtendRequest | ##### Token Extend Request Model
+$content_type = json_decode(''application/json''); // string
+$token_extend_request = json_decode('{"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"TokenValidityField":0}'); // \SigniFlowConnect\Model\TokenExtendRequest | ##### Token Extend Request Model
 
 try {
     $result = $apiInstance->postTokenExtend($content_type, $token_extend_request);
@@ -202,13 +217,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$token_validate_request = {"0":"string"}; // \SigniFlowConnect\Model\TokenValidateRequest | ##### Token Validate Request Model
+$content_type = json_decode(''application/json''); // string
+$token_validate_request = json_decode('{"0":"string"}'); // \SigniFlowConnect\Model\TokenValidateRequest | ##### Token Validate Request Model
 
 try {
     $result = $apiInstance->postTokenValidate($content_type, $token_validate_request);

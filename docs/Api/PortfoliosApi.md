@@ -30,13 +30,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\PortfoliosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$create_portfolio_request = {"DocIDField":2147483647,"PortfolioNameField":"Application Portfolio","TokenIDField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\CreatePortfolioRequest | ##### Create Portfolio Request Model
+$content_type = json_decode(''application/json''); // string
+$create_portfolio_request = json_decode('{"DocIDField":2147483647,"PortfolioNameField":"Application Portfolio","TokenIDField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\CreatePortfolioRequest | ##### Create Portfolio Request Model
 
 try {
     $result = $apiInstance->postCreatePortfolio($content_type, $create_portfolio_request);
@@ -88,13 +93,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\PortfoliosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$download_portfolio_request = {"PortfolioIDField":111112,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\DownloadPortfolioRequest | ##### Download Portfolio Request Model
+$content_type = json_decode(''application/json''); // string
+$download_portfolio_request = json_decode('{"PortfolioIDField":111112,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\DownloadPortfolioRequest | ##### Download Portfolio Request Model
 
 try {
     $result = $apiInstance->postDownloadPortfolio($content_type, $download_portfolio_request);
@@ -146,13 +156,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\PortfoliosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$link_to_portfolio_request = {"DocIDField":"string","DocumentNameField":"string","PortfolioIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\LinkToPortfolioRequest | ##### Link To Portfolio Request Model
+$content_type = json_decode(''application/json''); // string
+$link_to_portfolio_request = json_decode('{"DocIDField":"string","DocumentNameField":"string","PortfolioIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\LinkToPortfolioRequest | ##### Link To Portfolio Request Model
 
 try {
     $result = $apiInstance->postLinkToPortfolio($content_type, $link_to_portfolio_request);
@@ -204,13 +219,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\PortfoliosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$set_document_order_request = {"DocIDField":"string","DocumentOrderField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}; // \SigniFlowConnect\Model\SetDocumentOrderRequest | ##### Set Document Order Request Model
+$content_type = json_decode(''application/json''); // string
+$set_document_order_request = json_decode('{"DocIDField":"string","DocumentOrderField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}'); // \SigniFlowConnect\Model\SetDocumentOrderRequest | ##### Set Document Order Request Model
 
 try {
     $result = $apiInstance->postSetDocumentOrder($content_type, $set_document_order_request);
@@ -262,13 +282,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\PortfoliosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$share_portfolio_request = {"AccessLevelField":0,"PortfolioIDField":"string","ShareOptionField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"UniqueIDField":"string"}; // \SigniFlowConnect\Model\SharePortfolioRequest | ##### Share Portfolio Request Model
+$content_type = json_decode(''application/json''); // string
+$share_portfolio_request = json_decode('{"AccessLevelField":0,"PortfolioIDField":"string","ShareOptionField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"UniqueIDField":"string"}'); // \SigniFlowConnect\Model\SharePortfolioRequest | ##### Share Portfolio Request Model
 
 try {
     $result = $apiInstance->postSharePortfolio($content_type, $share_portfolio_request);
@@ -320,13 +345,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+
+$config = new SigniFlowConnect\Configuration();
+$config->setHost('https://Server-Url/API/SignFlowAPIServiceRest.svc');
+
 $apiInstance = new SigniFlowConnect\Api\PortfoliosApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
-$content_type = 'application/json'; // string
-$share_portfolio_no_email_request = {"AccessLevelField":0,"PortfolioIDField":"string","ShareOptionField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"UniqueIDField":"string"}; // \SigniFlowConnect\Model\SharePortfolioNoEmailRequest | ##### Share Portfolio No Email Request Model
+$content_type = json_decode(''application/json''); // string
+$share_portfolio_no_email_request = json_decode('{"AccessLevelField":0,"PortfolioIDField":"string","ShareOptionField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"UniqueIDField":"string"}'); // \SigniFlowConnect\Model\SharePortfolioNoEmailRequest | ##### Share Portfolio No Email Request Model
 
 try {
     $result = $apiInstance->postSharePortfolioNoEmail($content_type, $share_portfolio_no_email_request);
