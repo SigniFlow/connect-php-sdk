@@ -36,9 +36,11 @@ $apiInstance = new SigniFlowConnect\Api\AuditsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_audit_document_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetAuditDocumentRequest | ##### Get Audit Document Request Model
+$get_audit_document_request = 
+json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetAuditDocumentRequest | ##### Get Audit Document Request Model
 
 
 try {
@@ -101,9 +103,11 @@ $apiInstance = new SigniFlowConnect\Api\AuditsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_document_audit_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocumentAuditRequest | ##### Get Document Audit Request Model
+$get_document_audit_request = 
+json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetDocumentAuditRequest | ##### Get Document Audit Request Model
 
 
 try {

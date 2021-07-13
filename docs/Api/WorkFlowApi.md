@@ -47,9 +47,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$create_workflow_request = json_decode('{"AdditionalDataField":"\"\"","AutoExpireField":0,"AutoRemindField":0,"DocField":"String content","DocNameField":"String content","DueDateField":"2019-08-24T14:15:22Z","ExtensionField":0,"MessageField":"String content","PriorityField":0,"SLAField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\CreateWorkflowRequest | ##### Create Workflow Request Model
+$create_workflow_request = 
+json_decode('{"AdditionalDataField":"\"\"","AutoExpireField":0,"AutoRemindField":0,"DocField":"String content","DocNameField":"String content","DueDateField":"2019-08-24T14:15:22Z","ExtensionField":0,"MessageField":"String content","PriorityField":0,"SLAField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\CreateWorkflowRequest | ##### Create Workflow Request Model
 
 
 try {
@@ -112,9 +114,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_document_request = json_decode('{"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocumentRequest | ##### Get Document Request Model
+$get_document_request = 
+json_decode('{"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetDocumentRequest | ##### Get Document Request Model
 
 
 try {
@@ -177,9 +181,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$add_workflow_step_v2_request = json_decode('{"ActionField":0,"CellField":"string","DocIDField":"2147483647","EmailField":"email@domain.com","FirstNameField":"John","LanguageCodeField":"ENG","LastNameField":"Smith","ProxyAllowedField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\AddWorkflowStepV2Request | ##### Add A Workflow Step Request Model
+$add_workflow_step_v2_request = 
+json_decode('{"ActionField":0,"CellField":"string","DocIDField":"2147483647","EmailField":"email@domain.com","FirstNameField":"John","LanguageCodeField":"ENG","LastNameField":"Smith","ProxyAllowedField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\AddWorkflowStepV2Request | ##### Add A Workflow Step Request Model
 
 
 try {
@@ -242,9 +248,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$cancel_flow_request = json_decode('{"DocIDField":"2147483647","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\CancelFlowRequest | ##### Cancel Flow Request Model
+$cancel_flow_request = 
+json_decode('{"DocIDField":"2147483647","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\CancelFlowRequest | ##### Cancel Flow Request Model
 
 
 try {
@@ -307,9 +315,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$delete_doc_request = json_decode('{"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\DeleteDocRequest | ##### Delete Document Request Model
+$delete_doc_request = 
+json_decode('{"DocIDField":2147483647,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\DeleteDocRequest | ##### Delete Document Request Model
 
 
 try {
@@ -372,9 +382,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$doc_prepper_add_fields_flow_id_request = json_decode('{"DocFieldTypeField":0,"DocIDField":12344,"FlowIDField":11111,"HeightField":"25","WidthField":"20","IsInvisibleField":true,"LinkToField":"string","PageNumberField":2,"NameField":"string","UserEmailField":"email@domain.com","XCoordinateField":"50","YCoordinateField":"150","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\DocPrepperAddFieldsFlowIDRequest | ##### Document Prepper Add Fields Request Model
+$doc_prepper_add_fields_flow_id_request = 
+json_decode('{"DocFieldTypeField":0,"DocIDField":12344,"FlowIDField":11111,"HeightField":"25","WidthField":"20","IsInvisibleField":true,"LinkToField":"string","PageNumberField":2,"NameField":"string","UserEmailField":"email@domain.com","XCoordinateField":"50","YCoordinateField":"150","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\DocPrepperAddFieldsFlowIDRequest | ##### Document Prepper Add Fields Request Model
 
 
 try {
@@ -437,9 +449,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$doc_prepper_add_advanced_fields_request = json_decode('{"FieldInfoListField":[{"AdvancedFieldTypeField":0,"DocIDField":2147483647,"FieldOptionsListField":[{"LinkedValueField":"string","MaxField":5,"MinField":2,"ValueField":"string"}],"FlowIDField":11111,"FontFamilyField":"Arial","FontSizeField":12,"HeightField":"30","WidthField":"15","LinkToField":"string","NameField":"Text Field","PageNumberField":2,"SearchableField":true,"UserEmailField":"John@domain.com","ValueField":"string","XCoordinateField":"60","YCoordinateField":"120"}],"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\DocPrepperAddAdvancedFieldsRequest | ##### Document Prepper Add Advanced Fields Request Model
+$doc_prepper_add_advanced_fields_request = 
+json_decode('{"FieldInfoListField":[{"AdvancedFieldTypeField":0,"DocIDField":2147483647,"FieldOptionsListField":[{"LinkedValueField":"string","MaxField":5,"MinField":2,"ValueField":"string"}],"FlowIDField":11111,"FontFamilyField":"Arial","FontSizeField":12,"HeightField":"30","WidthField":"15","LinkToField":"string","NameField":"Text Field","PageNumberField":2,"SearchableField":true,"UserEmailField":"John@domain.com","ValueField":"string","XCoordinateField":"60","YCoordinateField":"120"}],"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\DocPrepperAddAdvancedFieldsRequest | ##### Document Prepper Add Advanced Fields Request Model
 
 
 try {
@@ -502,9 +516,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$full_workflow_request = json_decode('{"AdditionalDataField":"string","AutoRemindField":0,"CustomMessageField":"A message with things.","DocField":"string","DocNameField":"Document 1","DueDateField":"02/02/2021","ExtensionField":0,"FlattenDocumentField":true,"KeepContentSecurityField":true,"KeepCustomPropertiesField":true,"KeepXMPMetadataField":true,"PortfolioInformationField":{"CreatePortfolioField":true,"LinkToPortfolioField":true,"PortfolioIDField":11112,"PortfolioNameField":"Portfolio 1"},"PriorityField":0,"SLAField":0,"SendFirstEmailField":true,"SendWorkflowEmailsField":true,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"WorkflowUsersListField":[{"ActionField":0,"AllowProxyField":0,"AutoSignField":true,"EmailAddressField":"email@domain.com","GroupStepField":{"GroupMembersField":[{"LanguageCodeField":"string","UserEmailField":"string","UserFullNameField":"string","UserMobileNumberField":"string"}],"GroupNameField":"Managers","RequiredNumberOfSignaturesField":3},"LanguageCodeField":"ENG","LatitudeField":"string","LongitudeField":"string","MobileNumberField":"078 222 2222","PreloadedFaceToFaceSignersField":[{}],"SignReasonField":"Because yes","SignerPasswordField":"P@ssw0rd","UserFirstNameField":"John","UserFullNameField":"John Smith","UserLastNameField":"Smith","WorkflowUserFieldsField":[{"FieldTypeField":7,"FontFamilyField":"Arial","FontSizeField":15,"GroupUserNumberField":5,"HeightField":"15","IsInvisibleField":true,"PageNumberField":2,"TagNameField":"string","ValueField":"string","WidthField":"25","XCoordinateField":"60","XOffsetField":15,"YCoordinateField":"150","YOffsetField":20}]}]})'; // \SigniFlowConnect\Model\FullWorkflowRequest | ##### FullWorkflow Request Model
+$full_workflow_request = 
+json_decode('{"AdditionalDataField":"string","AutoRemindField":0,"CustomMessageField":"A message with things.","DocField":"string","DocNameField":"Document 1","DueDateField":"02/02/2021","ExtensionField":0,"FlattenDocumentField":true,"KeepContentSecurityField":true,"KeepCustomPropertiesField":true,"KeepXMPMetadataField":true,"PortfolioInformationField":{"CreatePortfolioField":true,"LinkToPortfolioField":true,"PortfolioIDField":11112,"PortfolioNameField":"Portfolio 1"},"PriorityField":0,"SLAField":0,"SendFirstEmailField":true,"SendWorkflowEmailsField":true,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"WorkflowUsersListField":[{"ActionField":0,"AllowProxyField":0,"AutoSignField":true,"EmailAddressField":"email@domain.com","GroupStepField":{"GroupMembersField":[{"LanguageCodeField":"string","UserEmailField":"string","UserFullNameField":"string","UserMobileNumberField":"string"}],"GroupNameField":"Managers","RequiredNumberOfSignaturesField":3},"LanguageCodeField":"ENG","LatitudeField":"string","LongitudeField":"string","MobileNumberField":"078 222 2222","PreloadedFaceToFaceSignersField":[{}],"SignReasonField":"Because yes","SignerPasswordField":"P@ssw0rd","UserFirstNameField":"John","UserFullNameField":"John Smith","UserLastNameField":"Smith","WorkflowUserFieldsField":[{"FieldTypeField":7,"FontFamilyField":"Arial","FontSizeField":15,"GroupUserNumberField":5,"HeightField":"15","IsInvisibleField":true,"PageNumberField":2,"TagNameField":"string","ValueField":"string","WidthField":"25","XCoordinateField":"60","XOffsetField":15,"YCoordinateField":"150","YOffsetField":20}]}]}')
+ // \SigniFlowConnect\Model\FullWorkflowRequest | ##### FullWorkflow Request Model
 
 
 try {
@@ -567,9 +583,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_doc_status_request = json_decode('{"DocIDField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocStatusRequest | ##### Get Document Status Request Model
+$get_doc_status_request = 
+json_decode('{"DocIDField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetDocStatusRequest | ##### Get Document Status Request Model
 
 
 try {
@@ -632,9 +650,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$initiate_flow_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\InitiateFlowRequest | ##### Initiate Flow Request Model
+$initiate_flow_request = 
+json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\InitiateFlowRequest | ##### Initiate Flow Request Model
 
 
 try {
@@ -697,9 +717,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$initiate_flow_no_email_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\InitiateFlowNoEmailRequest | ##### Initiate Flow No Email Request Model
+$initiate_flow_no_email_request = 
+json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\InitiateFlowNoEmailRequest | ##### Initiate Flow No Email Request Model
 
 
 try {
@@ -762,9 +784,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$initiate_flow_no_initial_email_request = json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\InitiateFlowNoInitialEmailRequest | ##### Initiate Flow No Initial Email Request Model
+$initiate_flow_no_initial_email_request = 
+json_decode('{"DocIDField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\InitiateFlowNoInitialEmailRequest | ##### Initiate Flow No Initial Email Request Model
 
 
 try {
@@ -827,9 +851,11 @@ $apiInstance = new SigniFlowConnect\Api\WorkFlowApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$workflow_sign_request = json_decode('{"DocIDField":"string","LatitudeField":"string","LoginPasswordField":"pa$$word","LoginUserNameField":"email@domain.com","LongitudeField":"string","SignReasonField":"string","TimeZoneOffsetField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\WorkflowSignRequest | ##### Workflow Sign Request Model
+$workflow_sign_request = 
+json_decode('{"DocIDField":"string","LatitudeField":"string","LoginPasswordField":"pa$$word","LoginUserNameField":"email@domain.com","LongitudeField":"string","SignReasonField":"string","TimeZoneOffsetField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\WorkflowSignRequest | ##### Workflow Sign Request Model
 
 
 try {

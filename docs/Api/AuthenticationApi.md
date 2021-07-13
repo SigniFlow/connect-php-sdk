@@ -38,9 +38,11 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$login_request = json_decode('{"UserNameField":"email@domain.com","PasswordField":"P@ssword"})'; // \SigniFlowConnect\Model\LoginRequest | ##### Login Request Model
+$login_request = 
+json_decode('{"UserNameField":"email@domain.com","PasswordField":"P@ssword"}')
+ // \SigniFlowConnect\Model\LoginRequest | ##### Login Request Model
 
 
 try {
@@ -103,9 +105,11 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$logout_request = json_decode('{"TokenField":"aaa111"})'; // \SigniFlowConnect\Model\LogoutRequest | ##### Logout Request Model
+$logout_request = 
+json_decode('{"TokenField":"aaa111"}')
+ // \SigniFlowConnect\Model\LogoutRequest | ##### Logout Request Model
 
 
 try {
@@ -168,9 +172,11 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$token_extend_request = json_decode('{"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"TokenValidityField":0})'; // \SigniFlowConnect\Model\TokenExtendRequest | ##### Token Extend Request Model
+$token_extend_request = 
+json_decode('{"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"},"TokenValidityField":0}')
+ // \SigniFlowConnect\Model\TokenExtendRequest | ##### Token Extend Request Model
 
 
 try {
@@ -233,9 +239,11 @@ $apiInstance = new SigniFlowConnect\Api\AuthenticationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$token_validate_request = json_decode('{"0":"string"})'; // \SigniFlowConnect\Model\TokenValidateRequest | ##### Token Validate Request Model
+$token_validate_request = 
+json_decode('{"0":"string"}')
+ // \SigniFlowConnect\Model\TokenValidateRequest | ##### Token Validate Request Model
 
 
 try {

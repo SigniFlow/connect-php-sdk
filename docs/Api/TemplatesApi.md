@@ -39,9 +39,11 @@ $apiInstance = new SigniFlowConnect\Api\TemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$apply_prepper_template_request = json_decode('{"DocIDField":2147483647,"PrepperTemplateIDField":21344,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\ApplyPrepperTemplateRequest | ##### Apply A Prepper Template Request Model
+$apply_prepper_template_request = 
+json_decode('{"DocIDField":2147483647,"PrepperTemplateIDField":21344,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\ApplyPrepperTemplateRequest | ##### Apply A Prepper Template Request Model
 
 
 try {
@@ -104,9 +106,11 @@ $apiInstance = new SigniFlowConnect\Api\TemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_document_tag_field_box_position_request = json_decode('{"DocIDField":0,"TagNameField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocumentTagFieldBoxPositionRequest | ##### Get Document Tag Field Box Position Request Model
+$get_document_tag_field_box_position_request = 
+json_decode('{"DocIDField":0,"TagNameField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetDocumentTagFieldBoxPositionRequest | ##### Get Document Tag Field Box Position Request Model
 
 
 try {
@@ -169,9 +173,11 @@ $apiInstance = new SigniFlowConnect\Api\TemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_document_tag_field_position_request = json_decode('{"DocIDField":0,"TagNameField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetDocumentTagFieldPositionRequest | ##### Get Document Tag Field Position Request Model
+$get_document_tag_field_position_request = 
+json_decode('{"DocIDField":0,"TagNameField":"string","TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetDocumentTagFieldPositionRequest | ##### Get Document Tag Field Position Request Model
 
 
 try {
@@ -234,9 +240,11 @@ $apiInstance = new SigniFlowConnect\Api\TemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_prepper_template_request = json_decode('{"DocIDField":0,"PrepperTemplateIDField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetPrepperTemplateRequest | ##### Get Prepper Template Request Model
+$get_prepper_template_request = 
+json_decode('{"DocIDField":0,"PrepperTemplateIDField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetPrepperTemplateRequest | ##### Get Prepper Template Request Model
 
 
 try {
@@ -299,9 +307,11 @@ $apiInstance = new SigniFlowConnect\Api\TemplatesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$content_type = json_decode(''application/json')'; // string
+$content_type = 'application/json'
 
-$get_prepper_template_list_request = json_decode('{"TemplateFolderField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}})'; // \SigniFlowConnect\Model\GetPrepperTemplateListRequest | ##### Get Prepper Template List Request Model
+$get_prepper_template_list_request = 
+json_decode('{"TemplateFolderField":0,"TokenField":{"TokenExpiryField":"2019-08-24T14:15:22Z","TokenField":"aaa111"}}')
+ // \SigniFlowConnect\Model\GetPrepperTemplateListRequest | ##### Get Prepper Template List Request Model
 
 
 try {
