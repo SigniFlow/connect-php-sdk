@@ -1,5 +1,7 @@
 # # GetDocStatusRequest
 
+#### This is the request used to get the document status.
+
 ## Properties
 
 Name | Type | Description | Notes

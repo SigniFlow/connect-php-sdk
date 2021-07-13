@@ -1,5 +1,7 @@
 # # GetPrepperTemplateListRequest
 
+#### The request sent to get the document template list.
+
 ## Properties
 
 Name | Type | Description | Notes

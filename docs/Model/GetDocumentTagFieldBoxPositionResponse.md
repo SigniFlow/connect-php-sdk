@@ -1,5 +1,7 @@
 # # GetDocumentTagFieldBoxPositionResponse
 
+#### The response returned after requesting the document tag field ox position.
+
 ## Properties
 
 Name | Type | Description | Notes

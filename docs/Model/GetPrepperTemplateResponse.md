@@ -1,5 +1,7 @@
 # # GetPrepperTemplateResponse
 
+#### The response received after requesting a document template.
+
 ## Properties
 
 Name | Type | Description | Notes

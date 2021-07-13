@@ -1,5 +1,7 @@
 # # GetDocumentTagFieldPositionResponse
 
+#### The response returned when requesting the document tag field position.
+
 ## Properties
 
 Name | Type | Description | Notes

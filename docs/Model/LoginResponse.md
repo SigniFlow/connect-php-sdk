@@ -1,5 +1,7 @@
 # # LoginResponse
 
+#### The response returned when a user Logs in.
+
 ## Properties
 
 Name | Type | Description | Notes

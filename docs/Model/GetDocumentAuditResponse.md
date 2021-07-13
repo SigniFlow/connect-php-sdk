@@ -1,5 +1,7 @@
 # # GetDocumentAuditResponse
 
+#### The response returned after requesting the audit information from a document.
+
 ## Properties
 
 Name | Type | Description | Notes

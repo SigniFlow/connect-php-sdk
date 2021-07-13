@@ -1,5 +1,7 @@
 # # SigningCeremonyV2Request
 
+#### The request sent to start the signing process of a document.
+
 ## Properties
 
 Name | Type | Description | Notes

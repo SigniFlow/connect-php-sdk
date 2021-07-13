@@ -1,5 +1,7 @@
 # # SetDocumentOrderRequest
 
+#### The request sent when the document order for signing is confirmed.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,7 @@
 # # TokenField
 
+#### Authentication Token
+
 ## Properties
 
 Name | Type | Description | Notes

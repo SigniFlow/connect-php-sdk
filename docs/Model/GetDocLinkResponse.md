@@ -1,5 +1,7 @@
 # # GetDocLinkResponse
 
+#### This is the response returned when a document url is requested.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,7 @@
 # # InitiateFlowRequest
 
+#### The request sent to initiate a workflow on a document.
+
 ## Properties
 
 Name | Type | Description | Notes

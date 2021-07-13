@@ -1,5 +1,7 @@
 # # DeleteDocResponse
 
+#### This is the response that will be returned when a document is deleted.
+
 ## Properties
 
 Name | Type | Description | Notes

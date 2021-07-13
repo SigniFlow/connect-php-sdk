@@ -1,5 +1,7 @@
 # # CreateWorkflowResponse
 
+#### The response returned when creating a document workflow.
+
 ## Properties
 
 Name | Type | Description | Notes

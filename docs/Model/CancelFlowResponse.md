@@ -1,5 +1,7 @@
 # # CancelFlowResponse
 
+#### The response returned when a user cancelled a workflow.
+
 ## Properties
 
 Name | Type | Description | Notes

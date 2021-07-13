@@ -1,5 +1,7 @@
 # # DownloadPortfolioResponse
 
+#### The response returned when a user wants to download a portfolio.
+
 ## Properties
 
 Name | Type | Description | Notes

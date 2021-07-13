@@ -1,5 +1,7 @@
 # # ApplyPrepperTemplateRequest
 
+#### Used to send a request for applying a template.
+
 ## Properties
 
 Name | Type | Description | Notes

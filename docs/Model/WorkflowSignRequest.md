@@ -1,5 +1,7 @@
 # # WorkflowSignRequest
 
+#### This request is sent when a document workflow needs to be signed.
+
 ## Properties
 
 Name | Type | Description | Notes

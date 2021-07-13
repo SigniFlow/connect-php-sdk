@@ -1,5 +1,7 @@
 # # LinkToPortfolioRequest
 
+#### This request is used to get the url link to a portfolio.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,7 @@
 # # FullWorkflowRequestPortfolioInformationField
 
+Portfolio information.
+
 ## Properties
 
 Name | Type | Description | Notes

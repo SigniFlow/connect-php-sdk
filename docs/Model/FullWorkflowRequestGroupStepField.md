@@ -1,5 +1,7 @@
 # # FullWorkflowRequestGroupStepField
 
+Steps of the group signers in the workflow.
+
 ## Properties
 
 Name | Type | Description | Notes

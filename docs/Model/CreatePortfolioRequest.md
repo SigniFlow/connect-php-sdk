@@ -1,5 +1,7 @@
 # # CreatePortfolioRequest
 
+#### Used to create a portfolio.
+
 ## Properties
 
 Name | Type | Description | Notes

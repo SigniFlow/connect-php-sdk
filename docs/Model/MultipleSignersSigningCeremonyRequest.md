@@ -1,5 +1,7 @@
 # # MultipleSignersSigningCeremonyRequest
 
+#### This is the request sent when there are multiple signers on a document.
+
 ## Properties
 
 Name | Type | Description | Notes

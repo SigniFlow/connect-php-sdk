@@ -1,5 +1,7 @@
 # # ApplyPrepperTemplateResponse
 
+#### Used to get the response afetr applying a template.
+
 ## Properties
 
 Name | Type | Description | Notes

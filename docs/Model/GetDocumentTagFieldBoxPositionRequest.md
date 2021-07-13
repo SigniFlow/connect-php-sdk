@@ -1,5 +1,7 @@
 # # GetDocumentTagFieldBoxPositionRequest
 
+#### The request sent to get the document tag field box position.
+
 ## Properties
 
 Name | Type | Description | Notes

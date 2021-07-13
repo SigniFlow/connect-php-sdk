@@ -1,5 +1,7 @@
 # # LogoutResponse
 
+#### The response returned when a user logs out.
+
 ## Properties
 
 Name | Type | Description | Notes

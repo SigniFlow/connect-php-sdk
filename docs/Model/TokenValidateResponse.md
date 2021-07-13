@@ -1,5 +1,7 @@
 # # TokenValidateResponse
 
+#### This is the response returned when a session token is validated.
+
 ## Properties
 
 Name | Type | Description | Notes

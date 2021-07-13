@@ -1,5 +1,7 @@
 # # CreateWorkflowRequest
 
+#### The request sent to create a document workflow.
+
 ## Properties
 
 Name | Type | Description | Notes

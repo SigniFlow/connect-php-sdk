@@ -1,5 +1,7 @@
 # # InitiateFlowResponse
 
+#### The response returned when a workflow is initiated.
+
 ## Properties
 
 Name | Type | Description | Notes

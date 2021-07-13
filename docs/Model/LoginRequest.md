@@ -1,5 +1,7 @@
 # # LoginRequest
 
+#### The request sent when a user Logs in.
+
 ## Properties
 
 Name | Type | Description | Notes

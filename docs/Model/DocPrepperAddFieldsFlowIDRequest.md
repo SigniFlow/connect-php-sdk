@@ -1,5 +1,7 @@
 # # DocPrepperAddFieldsFlowIDRequest
 
+#### The request sent when fields are added to a document using a FlowID.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,7 @@
 # # DeleteDocRequest
 
+#### This is the request used to delete a document.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,7 @@
 # # CreatePortfolioResponse
 
+#### The response received after a portfolio is created.
+
 ## Properties
 
 Name | Type | Description | Notes

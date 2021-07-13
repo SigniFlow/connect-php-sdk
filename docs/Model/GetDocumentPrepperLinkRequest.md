@@ -1,5 +1,7 @@
 # # GetDocumentPrepperLinkRequest
 
+#### This is the request sent to get a documnt prepper url.
+
 ## Properties
 
 Name | Type | Description | Notes

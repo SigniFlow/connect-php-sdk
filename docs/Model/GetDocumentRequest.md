@@ -1,5 +1,7 @@
 # # GetDocumentRequest
 
+#### The request sent when a user wants to download a document.
+
 ## Properties
 
 Name | Type | Description | Notes
