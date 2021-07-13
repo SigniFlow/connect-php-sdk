@@ -5,7 +5,7 @@
 [![PHP version](https://badge.fury.io/ph/signiflow%2Fconnect-php-sdk.svg)](https://badge.fury.io/ph/signiflow%2Fconnect-php-sdk)
 [![Apache-2 license](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# OpenAPIClient-php - the PHP library for the SigniFlow OpenAPI Spec v1
+# SigniFlow/connect-php-sdk - the PHP library for the SigniFlow OpenAPI Spec v1
 
 ## SigniFlow API used to automate esignature workflow creation and management.
 
