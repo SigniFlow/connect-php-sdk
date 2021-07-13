@@ -91,7 +91,7 @@ class Configuration
      *
      * @var string
      */
-    protected $userAgent = 'SigniFlow-Connect-PHP/1.20210712.0';
+    protected $userAgent = 'SigniFlow-Connect-PHP/1.0.1';
 
     /**
      * Debug switch (default set to false)
@@ -400,7 +400,7 @@ class Configuration
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: 1.0' . PHP_EOL;
-        $report .= '    SDK Package Version: 1.20210712.0' . PHP_EOL;
+        $report .= '    SDK Package Version: 1.0.1' . PHP_EOL;
         $report .= '    Temp Folder Path: ' . self::getDefaultConfiguration()->getTempFolderPath() . PHP_EOL;
 
         return $report;
